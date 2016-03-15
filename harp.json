@@ -1,0 +1,16 @@
+{
+  "domains": ["torgnybjers.xorcode.org", "torgnybjers.com"],
+  "globals": {
+    "site_title": "Torgny Bjers",
+    "twitter": "torgnybjers",
+    "site_url": "http://torgnybjers.com",
+    "disqus": {
+      "enabled": false,
+      "shortname": ""
+    },
+    "sitemap": {
+      "enabled": true,
+      "changefreq": "weekly"
+    }
+  }
+}
