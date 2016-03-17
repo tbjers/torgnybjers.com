@@ -24,39 +24,35 @@ html
         br
         |  the princess.
 
-      #main
+    #main
+      != yield
 
-      footer#footer
-        ul.icons
-          li
-            a(href="#").icon.fa-linkedin
-              span.label LinkedIn
-          li
-            a(href="#").icon.fa-twitter
-              span.label Twitter
-          li
-            a(href="#").icon.fa-facebook
-              span.label Facebook
-          li
-            a(href="#").icon.fa-github
-              span.label Github
-          li
-            a(href="#").icon.fa-stack-overflow
-              span.label Stack Overflow
-          li
-            a(href="#").icon.fa-medium
-              span.label Medium
-          li
-            a(href="#").icon.fa-envelope-o
-              span.label Email
+    footer#footer
+      ul.icons
+        li
+          a(href="#").icon.fa-twitter
+            span.label Twitter
+        li
+          a(href="#").icon.fa-facebook
+            span.label Facebook
+        li
+          a(href="#").icon.fa-github
+            span.label Github
+        li
+          a(href="#").icon.fa-stack-overflow
+            span.label Stack Overflow
+        li
+          a(href="#").icon.fa-medium
+            span.label Medium
 
-        ul.copyright
-          li © 1975-2016 Torgny Bjers
-            br
-            |  <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="font-size:80%;border-bottom:none;"><span class="icon fa-creative-commons"></span> BY-NC-SA</a>
+      ul.copyright
+        li © 1975-2016 Torgny Bjers 
+          br
+          a(href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="font-size:80%;border-bottom:none;")
+            span.icon.fa-creative-commons  Creative Commons BY-NC-SA
 
-    script(src="assets/js/jquery.min.js")
-    script(src="assets/js/jquery.poptrox.min.js")
-    script(src="assets/js/skel.min.js")
-    script(src="assets/js/util.js")
-    script(src="assets/js/main.js")
+    script(src="/assets/js/jquery.min.js")
+    script(src="/assets/js/jquery.poptrox.min.js")
+    script(src="/assets/js/skel.min.js")
+    script(src="/assets/js/util.js")
+    script(src="/assets/js/main.js")
