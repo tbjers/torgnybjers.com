@@ -25,6 +25,27 @@ html
             p= byline
           .content
             != yield
+          .sidebar
+            section
+              h3 Recent posts
+
+    footer#footer
+      .content
+        .inner
+          section.about
+            h3 Torgny Bjers
+            p Torgny Bjers farms servers in the clouds and conjures confluent code from pixie dust and meteorite slag. If besought, he will help you find the castle with the princess.
+            ul.actions
+              li
+                a(href="#").button Learn More
+          ul.icons.bulleted
+            li.icon.fa-twitter @torgnybjers
+            li.icon.fa-github github.com/tbjers
+            li.icon.fa-facebook facebook.com/torgny
+            li.icon.fa-stack-overflow stackoverflow.com/tbjers
+            li.icon.fa-medium medium.com/@torgny
+      p.copyright
+        != partial("../_partials/copyright")
 
     script(src="/assets/js/jquery.min.js")
     script(src="/assets/js/jquery.dropotron.min.js")
