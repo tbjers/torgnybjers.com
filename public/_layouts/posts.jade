@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= locals.title ? title + " | " + site_title : site_title
+    link(rel="stylesheet" href="/assets/css/main.css")
+    link(rel="alternate", type="application/rss+xml", title="#{ site_title } RSS", href="/rss.xml")
+
+  body
+    h1= title
+    != yield

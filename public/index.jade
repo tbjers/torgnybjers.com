@@ -1,5 +1,12 @@
-section#one
-  header.major
-    h2 Ipsum lorem dolor aliquam ante commodo
-      br
-      | magna sed accumsan arcu neque.
+for post, slug in public.posts._data
+  if post.layout !== false
+    section#one
+      header.major
+        h2= post.title
+        if post.description
+          p= post.description
+            |  
+            != partial('_partials/blog-tags', { tags: post.tags })
+        ul.actions
+          li
+            a(href="/posts/#{ slug }.html").button Read More
