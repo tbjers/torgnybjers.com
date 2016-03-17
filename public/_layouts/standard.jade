@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= locals.title ? title + " | " + site_title : site_title
+    link(rel="stylesheet" href="/assets/css/main.css")
+    link(rel="alternate", type="application/rss+xml", title="#{ site_title } RSS", href="/rss.xml")
+
+  body
+
+    header#header
+      h1#logo
+        a(href="/")= site_title
+      nav#nav
+        ul
+          li
+            a(href="/") Home
+    
+    section#main.wrapper.sidebar.right
+      .inner
+        if current.path[0] === "posts"
+          header.major
+            h2= title
+            p= byline
+          .content
+            != yield
+
+    script(src="/assets/js/jquery.min.js")
+    script(src="/assets/js/jquery.dropotron.min.js")
+    script(src="/assets/js/jquery.scrollex.min.js")
+    script(src="/assets/js/skel.min.js")
+    script(src="/assets/js/util.js")
+    script(src="/assets/js/main.js")

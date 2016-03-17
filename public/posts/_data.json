@@ -8,6 +8,6 @@
     "date": "October 24, 2013",
     "description": "Having used New Relic for other projects we of course jumped on the chance to get started with New Relic for Node.js when our sales contact reached out to us right after their beta ended. We’ve got several projects using Geddy, which is not supported out of the box, so we had to do some customization.",
     "tags": ["node"],
-    "layout": "../_layouts/posts"
+    "layout": "../_layouts/standard"
   }
 }
