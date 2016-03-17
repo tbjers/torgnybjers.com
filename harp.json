@@ -8,6 +8,16 @@
       "enabled": false,
       "shortname": ""
     },
+    "google_analytis": {
+    },
+    "social_links": {
+      "twitter": "torgnybjers",
+      "facebook": "torgny",
+      "github": "tbjers",
+      "medium": "torgny",
+      "stackoverflow": "99481/tbjers",
+      "dribbble": false
+    },
     "sitemap": {
       "enabled": true,
       "changefreq": "weekly"

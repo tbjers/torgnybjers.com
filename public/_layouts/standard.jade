@@ -41,11 +41,24 @@ html
               li
                 a(href="#").button Learn More
           ul.icons.bulleted
-            li.icon.fa-twitter @torgnybjers
-            li.icon.fa-github github.com/tbjers
-            li.icon.fa-facebook facebook.com/torgny
-            li.icon.fa-stack-overflow stackoverflow.com/tbjers
-            li.icon.fa-medium medium.com/@torgny
+            if social_links.twitter
+              li.icon.fa-twitter
+                a(href="https://twitter.com/#{ social_links.twitter }" target="_blank") @#{ social_links.twitter }
+            if social_links.github
+              li.icon.fa-github
+                a(href="https://github.com/#{ social_links.github }" target="_blank") github.com/#{ social_links.github }
+            if social_links.facebook
+              li.icon.fa-facebook
+                a(href="https://www.facebook.com/#{ social_links.facebook }" target="_blank") facebook.com/#{ social_links.facebook }
+            if social_links.stackoverflow
+              li.icon.fa-stack-overflow
+                a(href="https://stackoverflow.com/#{ social_links.stackoverflow }" target="_blank") stackoverflow.com/#{ social_links.stackoverflow }
+            if social_links.medium
+              li.icon.fa-medium
+                a(href="https://medium.com/@#{ social_links.medium }" target="_blank") medium.com/@#{ social_links.medium }
+            if social_links.dribbble
+              li.icon.fa-dribbble
+                a(href="https://dribbble.com/@#{ social_links.dribbble }" target="_blank") dribbble.com/@#{ social_links.dribbble }
       p.copyright
         != partial('../_partials/copyright')
 
