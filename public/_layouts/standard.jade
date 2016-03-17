@@ -23,6 +23,8 @@ html
           header.major
             h2= title
             p= byline
+              |  
+              != partial('../_partials/blog-tags', { tags: tags })
           .content
             != yield
           .sidebar
@@ -45,7 +47,7 @@ html
             li.icon.fa-stack-overflow stackoverflow.com/tbjers
             li.icon.fa-medium medium.com/@torgny
       p.copyright
-        != partial("../_partials/copyright")
+        != partial('../_partials/copyright')
 
     script(src="/assets/js/jquery.min.js")
     script(src="/assets/js/jquery.dropotron.min.js")
