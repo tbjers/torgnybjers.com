@@ -8,7 +8,9 @@
       "enabled": false,
       "shortname": ""
     },
-    "google_analytis": {
+    "google_analytics": {
+      "enabled": true,
+      "account": "UA-9637763-1"
     },
     "social_links": {
       "twitter": "torgnybjers",

@@ -6,6 +6,7 @@ html
     title= locals.title ? title + " | " + site_title : site_title
     link(rel="stylesheet" href="/assets/css/landing.css")
     link(rel="alternate", type="application/rss+xml", title="#{ site_title } RSS", href="/rss.xml")
+    != partial('../_partials/header')
 
   body#top
 
@@ -63,3 +64,4 @@ html
     script(src="/assets/js/skel.min.js")
     script(src="/assets/js/util.js")
     script(src="/assets/js/main.js")
+    != partial('../_partials/footer')
