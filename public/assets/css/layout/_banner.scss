@@ -11,7 +11,7 @@
 /* Banner */
 
 #banner {
-  @include banner-bg('../../img/banner.jpg');
+  @include banner-bg('../img/bg.jpg');
   position: relative;
   min-height: 70vh;
   height: 35em;

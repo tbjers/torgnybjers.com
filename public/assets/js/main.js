@@ -1,54 +1,46 @@
 /*
-	Strata by Pixelarity
+	Archetype by Pixelarity
 	pixelarity.com @pixelarity
 	License: pixelarity.com/license
 */
 
 (function($) {
 
-	var settings = {
-
-		// Parallax background effect?
-			parallax: true,
-
-		// Parallax factor (lower = more intense, higher = less intense).
-			parallaxFactor: 20
-
-	};
-
 	skel.breakpoints({
-		xlarge: '(max-width: 1800px)',
-		large: '(max-width: 1280px)',
-		medium: '(max-width: 980px)',
-		small: '(max-width: 736px)',
-		xsmall: '(max-width: 480px)'
+		xlarge:	'(max-width: 1680px)',
+		large:	'(max-width: 1280px)',
+		medium:	'(max-width: 980px)',
+		small:	'(max-width: 736px)',
+		xsmall:	'(max-width: 480px)'
 	});
 
 	$(function() {
 
-		var $window = $(window),
+		var	$window = $(window),
 			$body = $('body'),
+			$banner = $('#banner'),
 			$header = $('#header');
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
 			$window.on('load', function() {
-				$body.removeClass('is-loading');
+				window.setTimeout(function() {
+					$body.removeClass('is-loading');
+				}, 100);
 			});
 
-		// Touch?
-			if (skel.vars.mobile) {
-
-				// Turn on touch mode.
-					$body.addClass('is-touch');
-
-				// Height fix (mostly for iOS).
-					window.setTimeout(function() {
-						$window.scrollTop($window.scrollTop() + 1);
-					}, 0);
-
-			}
+		// Mobile?
+			if (skel.vars.mobile)
+				$body.addClass('is-mobile');
+			else
+				skel
+					.on('-medium !medium', function() {
+						$body.removeClass('is-mobile');
+					})
+					.on('+medium', function() {
+						$body.addClass('is-mobile');
+					});
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
@@ -61,59 +53,59 @@
 				);
 			});
 
+		// Dropdowns.
+			$('#nav > ul').dropotron({
+				alignment: 'right',
+				hideDelay: 400
+			});
+
+		// Off-Canvas Navigation.
+
+			// Navigation Panel Toggle.
+				$('<a href="#navPanel" class="navPanelToggle"></a>')
+					.appendTo($header);
+
+			// Navigation Panel.
+				$(
+					'<div id="navPanel">' +
+						'<nav>' +
+							$('#nav').navList() +
+						'</nav>' +
+						'<a href="#navPanel" class="close"></a>' +
+					'</div>'
+				)
+					.appendTo($body)
+					.panel({
+						delay: 500,
+						hideOnClick: true,
+						hideOnSwipe: true,
+						resetScroll: true,
+						resetForms: true,
+						side: 'right'
+					});
+
+			// Fix: Remove transitions on WP<10 (poor/buggy performance).
+				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
+					$('#navPanel')
+						.css('transition', 'none');
+
 		// Header.
+			if (skel.vars.IEVersion < 9)
+				$header.removeClass('alt');
 
-			// Parallax background.
+			if ($banner.length > 0
+			&&	$header.hasClass('alt')) {
 
-				// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
-					if (skel.vars.browser == 'ie'
-					||	skel.vars.mobile)
-						settings.parallax = false;
+				$window.on('resize', function() { $window.trigger('scroll'); });
 
-				if (settings.parallax) {
-
-					skel.on('change', function() {
-
-						if (skel.breakpoint('medium').active) {
-
-							$window.off('scroll.strata_parallax');
-							$header.css('background-position', 'top left, center center');
-
-						}
-						else {
-
-							$header.css('background-position', 'left 0px');
-
-							$window.on('scroll.strata_parallax', function() {
-								$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
-							});
-
-						}
-
-					});
-
-				}
-
-		// Main Sections: Two.
-
-			// Lightbox gallery.
-				$window.on('load', function() {
-
-					$('#two').poptrox({
-						caption: function($a) { return $a.next('h3').text(); },
-						overlayColor: '#2c2c2c',
-						overlayOpacity: 0.85,
-						popupCloserText: '',
-						popupLoaderText: '',
-						selector: '.work-item a.image',
-						usePopupCaption: true,
-						usePopupDefaultStyling: false,
-						usePopupEasyClose: false,
-						usePopupNav: true,
-						windowMargin: (skel.breakpoint('small').active ? 0 : 50)
-					});
-
+				$banner.scrollex({
+					bottom:		$header.outerHeight() + 5,
+					terminate:	function() { $header.removeClass('alt'); },
+					enter:		function() { $header.addClass('alt'); },
+					leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); }
 				});
+
+			}
 
 	});
 
