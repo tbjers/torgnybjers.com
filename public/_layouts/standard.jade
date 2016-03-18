@@ -21,17 +21,10 @@ html
     
     section#main.wrapper.sidebar.right
       .inner
+
         if current.path[0] === "posts"
-          header.major
-            h2= title
-            p= byline
-              |  
-              != partial('../_partials/blog-tags', { tags: tags })
-          .content
-            != yield
-          .sidebar
-            section
-              h3 Recent posts
+          != partial('../posts/_post')
+
         else if current.path[0] === "tags"
           - var friendlyTagName = current.source.charAt(0).toUpperCase() + current.source.slice(1)
           header.major

@@ -1,0 +1,14 @@
+header.major
+  h2= title
+  p= byline
+    |  
+    != partial('../_partials/blog-tags', { tags: tags })
+
+.content
+  != yield
+
+  != partial('../_partials/blog-nav')
+
+.sidebar
+  section
+    h3 Recent posts
