@@ -1,0 +1,20 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+.post-nav {
+  @extend .actions;
+  & > li {
+    & > a {
+      @extend .button;
+      &.prev {
+        @extend .icon;
+        @include icon("\f060");
+      }
+      &.next {
+        @extend .icon-after;
+        @include icon-after("\f061");
+      }
+    }
+  }
+}
