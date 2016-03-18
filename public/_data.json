@@ -2,6 +2,9 @@
   "index": {
     "layout": "_layouts/landing"
   },
+  "404": {
+    "layout": "_layouts/landing"
+  },
   "rss": {
     "layout": false
   },
