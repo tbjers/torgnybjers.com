@@ -6,7 +6,7 @@
     "title": "Supporting Liquid Templates in Wintersmith",
     "byline": "Liquid is a simple, secure and stateless template engine",
     "date": "August 22, 2013",
-    "description": "We've gotten used to Liquid from using Jekyll and Octopress. When we took Wintersmith for a spin we sort of missed Liquid. So we created a template plugin for Liquid that uses the liquid-node module to render Liquid templates.",
+    "description": "I've gotten used to Liquid from using Jekyll and Octopress. When I took Wintersmith for a spin I sort of missed Liquid. So I created a template plugin for Liquid that uses the liquid-node module to render Liquid templates.",
     "tags": ["code"],
     "layout": "../_layouts/standard"
   },
@@ -14,7 +14,7 @@
     "title": "Solarized Dark theme for Textual",
     "byline": "Textual is a lightweight IRC client created specifically for Mac OS X",
     "date": "August 23, 2013",
-    "description": "After looking through the available themes for Textual, one of the best IRC clients for Mac OS X, we decided to roll our own Solarized Dark theme by cloning the Sapientia theme packaged with Textual.",
+    "description": "After looking through the available themes for Textual, one of the best IRC clients for Mac OS X, I decided to roll my own Solarized Dark theme by cloning the Sapientia theme packaged with Textual.",
     "tags": ["code"],
     "layout": "../_layouts/standard"
   },
@@ -22,7 +22,7 @@
     "title": "Monitor Geddy apps with New Relic",
     "byline": "Using New Relic's Node.js agent to monitor Geddy applications",
     "date": "October 24, 2013",
-    "description": "Having used New Relic for other projects we of course jumped on the chance to get started with New Relic for Node.js when our sales contact reached out to us right after their beta ended. We’ve got several projects using Geddy, which is not supported out of the box, so we had to do some customization.",
+    "description": "Having used New Relic for other projects I of course jumped on the chance to get started with New Relic for Node.js when my sales contact reached out to me right after the beta ended. I’ve got several projects using Geddy, which is not supported out of the box, so I had to do some customization.",
     "tags": ["node"],
     "layout": "../_layouts/standard"
   }

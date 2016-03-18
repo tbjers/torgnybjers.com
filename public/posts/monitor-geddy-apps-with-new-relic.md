@@ -1,10 +1,10 @@
-Having used [New Relic]({{ 'http://newrelic.com/' | bitly }}) for other projects we of course jumped on the chance to get started with [New Relic for Node.js]({{ 'http://newrelic.com/nodejs' | bitly }}) when our sales contact reached out to us right after their beta ended. We've got several projects using [Geddy]({{ 'http://geddyjs.org/' | bitly }}), which is not supported out of the box, so we had to do some customization.
+Having used [New Relic]({{ 'http://newrelic.com/' | bitly }}) for other projects I of course jumped on the chance to get started with [New Relic for Node.js]({{ 'http://newrelic.com/nodejs' | bitly }}) when our sales contact reached out to us right after their beta ended. I've got several projects using [Geddy]({{ 'http://geddyjs.org/' | bitly }}), which is not supported out of the box, so I had to do some customization.
 
 > Pinpoint and solve your Node.js application performance issues! New Relic is
 > the only tool you'll need to see everything in your data intensive,
 > real-time, Node.js applications—from application response times to server monitoring.
 
-New Relic for Node.js officially launched today, and the [original press release]({{ 'http://blog.newrelic.com/2013/10/24/node-joins-new-relic-family/' | bitly }}) includes a short tutorial on how to get started, which we will also cover in this article.
+New Relic for Node.js officially launched today, and the [original press release]({{ 'http://blog.newrelic.com/2013/10/24/node-joins-new-relic-family/' | bitly }}) includes a short tutorial on how to get started, which I will also cover in this article.
 
 ## Create a new Geddy project
 

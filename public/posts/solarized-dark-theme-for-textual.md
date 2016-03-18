@@ -1,4 +1,4 @@
-After looking through the available themes for [Textual](http://xorcode.net/1azypgm), one of the best <abbr title="Internet Relay Chat">IRC</abbr> clients for [Mac OS X](http://xorcode.net/1azyXCX), we decided to roll our own Solarized Dark theme by cloning the Sapientia theme packaged with Textual.
+After looking through the available themes for [Textual](http://xorcode.net/1azypgm), one of the best <abbr title="Internet Relay Chat">IRC</abbr> clients for [Mac OS X](http://xorcode.net/1azyXCX), I decided to roll our own Solarized Dark theme by cloning the Sapientia theme packaged with Textual.
 
 > Textual is a lightweight IRC client created specifically for Mac OS X.
 > It was designed with simplicity in mind. Textual has taken the best of IRC and
