@@ -1,0 +1,20 @@
+{
+  "code": {
+    "layout": "../_layouts/standard"
+  },
+  "docker": {
+    "layout": "../_layouts/standard"
+  },
+  "meteor": {
+    "layout": "../_layouts/standard"
+  },
+  "node": {
+    "layout": "../_layouts/standard"
+  },
+  "nuc": {
+    "layout": "../_layouts/standard"
+  },
+  "rails": {
+    "layout": "../_layouts/standard"
+  }
+}

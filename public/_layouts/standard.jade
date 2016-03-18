@@ -32,6 +32,19 @@ html
           .sidebar
             section
               h3 Recent posts
+        else if current.path[0] === "tags"
+          - var friendlyTagName = current.source.charAt(0).toUpperCase() + current.source.slice(1)
+          header.major
+            h2= friendlyTagName
+            != yield
+          - var p = 0
+          for post, slug in public.posts._data
+            if post.layout !== false
+              if !post.tags || post.tags.indexOf(current.source) == -1
+                - continue
+              a(href="/posts/#{ slug }.html" id="post-#{current.source}-#{p++}")= post.title
+          unless p
+            p There are currently no articles about #{friendlyTagName}.
 
     footer#footer
       .content
