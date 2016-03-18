@@ -4,7 +4,7 @@ I've gotten used to [Liquid](https://github.com/Shopify/liquid/) from using [Jek
 
 Template plugins for Wintersmith are quite easy to write. I published mine on [npm](http://xorcode.net/13Tu00a) after a few minutes after initially having been confounded by [CoffeeScript](http://xorcode.net/13TuZxs). Bonus: now I know how to write CoffeeScript!
 
-## Installation instructions
+### Installation instructions
 
 Navigate to the folder you created with `wintersmith new` and run
 

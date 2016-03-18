@@ -5,14 +5,14 @@ After looking through the available themes for [Textual](http://xorcode.net/1azy
 > built it into a single client. Its easy-to-use functionality combined with
 > scripting support makes it an ideal IRC client for novice to advanced users.
 
-## Installation
+### Installation
 
 ```sh
 $ cd ~/Library/Containers/com.codeux.irc.textual/Data/Library/Application\ Support/Textual\ IRC/Styles/
 $ git clone https://github.com/Xorcode/textual-solarized-dark.git
 ```
 
-## Contribute
+### Contribute
 
 Feel free to fork our repository to contribute changes, bug fixes, and features. If you run into any problems with the theme, please create an [issue](http://xorcode.net/1azz9C6).
 

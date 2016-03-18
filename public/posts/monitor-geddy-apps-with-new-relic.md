@@ -6,7 +6,7 @@ Having used [New Relic]({{ 'http://newrelic.com/' | bitly }}) for other projects
 
 New Relic for Node.js officially launched today, and the [original press release]({{ 'http://blog.newrelic.com/2013/10/24/node-joins-new-relic-family/' | bitly }}) includes a short tutorial on how to get started, which I will also cover in this article.
 
-## Create a new Geddy project
+### Create a new Geddy project
 
 Create a new Geddy project.
 
@@ -17,7 +17,7 @@ Let's start with installing the New Relic Node.js agent.
 
     $ npm install newrelic --save
 
-## Configuring Geddy and New Relic
+### Configuring Geddy and New Relic
 
 Once you have installed the agent, you need to copy the configuration file into the root of your project.
 
@@ -41,7 +41,7 @@ geddy.startCluster({
 });
 ```
 
-## Loading New Relic
+### Loading New Relic
 
 Load New Relic in your `config/init.js` script.
 
@@ -56,7 +56,7 @@ if (cluster.isWorker && process.env.NODE_ENV == 'production') {
 
 We only require the New Relic module if we're running in production. You can always remove the `if` statement around `require('newrelic')` if that makes more sense to you. We also prefer that New Relic logs to `stdout` instead of to a log file since we host on various different platforms and we might not want files to be created at all.
 
-## Scaffold test endpoint
+### Scaffold test endpoint
 
 We need something to report on, so let's scaffold an endpoint for our application to report on.
 
@@ -74,7 +74,7 @@ You'll see output similar to this:
 [Added] View templates
 ```
 
-## Name requests properly in Geddy
+### Name requests properly in Geddy
 
 Open up `app/controllers/application.js` and change its contents to the following:
 
@@ -90,7 +90,7 @@ exports.Application = Application;
 
 We are using `newrelic.setControllerName()` to name our requests so that they do not all get grouped under `/*` or similar in New Relic.
 
-## Run your application
+### Run your application
 
 Running our application with Node is simple:
 
@@ -100,16 +100,16 @@ Navigate to [http://localhost:4000/](http://localhost:4000/) and then [http://lo
 
 Once you start your application you will begin to see data in New Relic within five minutes and your brand new Node.js application will be accessible from your New Relic dashboard.
 
-## Repository
+### Repository
 
 You can take a look at our example repository if you want to make sure you didn't miss anything.
 
 <a href="https://bitbucket.org/xorcode/geddy-newrelic-tutorial/" class="button special icon fa-bitbucket">Fork on Bitbucket</a>
 
-## Documentation
+### Documentation
 
 For more information, please see the [Geddy documentation](http://geddyjs.org/reference#controllers.params) on controllers as well as the [New Relic Node.js project](https://github.com/newrelic/node-newrelic/#transactions-and-request-naming).
 
-## Thank yous
+### Thank yous
 
 Thanks to [Ben Ng](https://github.com/ben-ng) for finding the memory leak issue with New Relic and for supplying a fix.
