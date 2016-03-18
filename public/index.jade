@@ -1,5 +1,13 @@
 - var p = 0
-for post, slug in public.posts._data
+- var postList = []
+- 
+  each post, slug in public.posts._data
+    if post.layout !== false
+      - post.slug = slug
+      - postList.push(post)
+- postList.reverse()
+
+for post in postList
   if post.layout !== false
     if p++ == 0
       section#one
@@ -13,8 +21,8 @@ for post, slug in public.posts._data
             p= post.description
           ul.actions
             li
-              a(href="/posts/#{ slug }.html").button Read More
-    else if p < 3
+              a(href="/posts/#{ post.slug }.html").button Read More
+    else if p < 4
       section
         header
           h4= post.title
@@ -26,7 +34,7 @@ for post, slug in public.posts._data
           p= post.description
         ul.actions
           li
-            a(href="/posts/#{ slug }.html").button.small Read More
+            a(href="/posts/#{ post.slug }.html").button.small Read More
 
 section#contact
   h2 Get In Touch
