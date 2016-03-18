@@ -1,12 +1,64 @@
+- var p = 0
 for post, slug in public.posts._data
   if post.layout !== false
-    section#one
-      header.major
-        h2= post.title
+    if p++ == 0
+      section#one
+        header.major
+          h2= post.title
+          if post.byline
+            p= post.byline
+              |  
+              != partial('_partials/blog-tags', { tags: post.tags })
+          if post.description
+            p= post.description
+          ul.actions
+            li
+              a(href="/posts/#{ slug }.html").button Read More
+    else if p < 3
+      section
+        header
+          h4= post.title
+          if post.byline
+            p= post.byline
+              |  
+              != partial('_partials/blog-tags', { tags: post.tags })
         if post.description
           p= post.description
-            |  
-            != partial('_partials/blog-tags', { tags: post.tags })
         ul.actions
           li
-            a(href="/posts/#{ slug }.html").button Read More
+            a(href="/posts/#{ slug }.html").button.small Read More
+
+section#three
+  h2 Get In Touch
+  p Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+  .row
+    div(class="8u 12u$(small)")
+      form(method="post" action="#")
+        div(class="row uniform 50%")
+          div(class="6u 12u$(xsmall)")
+            input(type="text" name="name" id="name" placeholder="Name")
+          div(class="6u$ 12u$(xsmall)")
+            input(type="email" name="email" id="email" placeholder="Email")
+          div(class="12u$")
+            textarea(name="message" id="message" placeholder="Message" rows="4")
+      ul.actions
+        li
+          input(type="submit" value="Send Message")
+    div(class="4u$ 12u$(small)")
+      ul.labeled-icons
+        li
+          h3.icon.fa-home
+            span.label Address
+          | 1825 Parson St
+          br
+          | Charlotte, NC 28205
+          br
+          | United States
+        li
+          h3.icon.fa-mobile
+            span.label Phone
+          | 704-802-2633
+        li
+          h3.icon.fa-envelope-o
+            span.label Email
+          a(href="#") hello@torgnybjers.com

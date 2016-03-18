@@ -9,5 +9,13 @@
     "description": "Having used New Relic for other projects we of course jumped on the chance to get started with New Relic for Node.js when our sales contact reached out to us right after their beta ended. We’ve got several projects using Geddy, which is not supported out of the box, so we had to do some customization.",
     "tags": ["node"],
     "layout": "../_layouts/standard"
+  },
+  "solarized-dark-theme-for-textual": {
+    "title": "Solarized Dark theme for Textual",
+    "byline": "Textual is a lightweight IRC client created specifically for Mac OS X",
+    "date": "August 23, 2013",
+    "description": "After looking through the available themes for Textual, one of the best IRC clients for Mac OS X, we decided to roll our own Solarized Dark theme by cloning the Sapientia theme packaged with Textual.",
+    "tags": ["code"],
+    "layout": "../_layouts/standard"
   }
 }

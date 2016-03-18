@@ -1,6 +1,8 @@
 Having used [New Relic]({{ 'http://newrelic.com/' | bitly }}) for other projects we of course jumped on the chance to get started with [New Relic for Node.js]({{ 'http://newrelic.com/nodejs' | bitly }}) when our sales contact reached out to us right after their beta ended. We've got several projects using [Geddy]({{ 'http://geddyjs.org/' | bitly }}), which is not supported out of the box, so we had to do some customization.
 
-> Pinpoint and solve your Node.js application performance issues! New Relic is the only tool you'll need to see everything in your data intensive, real-time, Node.js applications—from application response times to server monitoring.
+> Pinpoint and solve your Node.js application performance issues! New Relic is
+> the only tool you'll need to see everything in your data intensive,
+> real-time, Node.js applications—from application response times to server monitoring.
 
 New Relic for Node.js officially launched today, and the [original press release]({{ 'http://blog.newrelic.com/2013/10/24/node-joins-new-relic-family/' | bitly }}) includes a short tutorial on how to get started, which we will also cover in this article.
 
@@ -102,7 +104,7 @@ Once you start your application you will begin to see data in New Relic within f
 
 You can take a look at our example repository if you want to make sure you didn't miss anything.
 
-<a href="{{ 'https://bitbucket.org/xorcode/geddy-newrelic-tutorial/' | bitly }}" class="btn btn-primary"><i class="fa fa-bitbucket"></i> Fork on Bitbucket</a>
+<a href="https://bitbucket.org/xorcode/geddy-newrelic-tutorial/" class="button special icon fa-bitbucket">Fork on Bitbucket</a>
 
 ## Documentation
 
