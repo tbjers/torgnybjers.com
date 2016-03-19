@@ -37,7 +37,7 @@ html
         else if current.path[0] === "tags"
           - var friendlyTagName = current.source.charAt(0).toUpperCase() + current.source.slice(1)
           header.major
-            h2 ##{ friendlyTagName }
+            h1 ##{ friendlyTagName }
             != yield
           - var p = 0
           for post, slug in public.posts._data
@@ -87,5 +87,6 @@ html
     script(src="/assets/js/jquery.scrollex.min.js")
     script(src="/assets/js/skel.min.js")
     script(src="/assets/js/util.js")
+    script(src="/assets/js/prism.min.js")
     script(src="/assets/js/main.js")
     != partial('../_partials/footer')

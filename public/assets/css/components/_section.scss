@@ -20,16 +20,23 @@ header {
   p {
     position: relative;
     margin: 0 0 (_size(element-margin) * 0.75) 0;
+    font-weight: _font(weight-thin);
   }
 
-  h2 + p {
+  h1 + p {
     font-size: 1.25em;
     margin-top: (_size(element-margin) * -0.35);
     line-height: 1.5em;
   }
 
-  h3 + p {
+  h2 + p {
     font-size: 1.1em;
+    margin-top: (_size(element-margin) * -0.25);
+    line-height: 1.5em;
+  }
+
+  h3 + p {
+    font-size: 1em;
     margin-top: (_size(element-margin) * -0.25);
     line-height: 1.5em;
   }
@@ -38,7 +45,7 @@ header {
   h5 + p,
   h6 + p {
     font-size: 0.9em;
-    margin-top: (_size(element-margin) * -0.3);
+    margin-top: (_size(element-margin) * -0.25);
     line-height: 1.5em;
   }
 
