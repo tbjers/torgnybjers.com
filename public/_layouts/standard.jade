@@ -28,14 +28,15 @@ html
         else if current.path[0] === "tags"
           - var friendlyTagName = current.source.charAt(0).toUpperCase() + current.source.slice(1)
           header.major
-            h2= friendlyTagName
+            h2 ##{ friendlyTagName }
             != yield
           - var p = 0
           for post, slug in public.posts._data
             if post.layout !== false
               if !post.tags || post.tags.indexOf(current.source) == -1
                 - continue
-              a(href="/posts/#{ slug }.html" id="post-#{current.source}-#{p++}")= post.title
+              - p++
+              != partial('../posts/_listitem', { post: post })
           unless p
             p There are currently no articles about #{friendlyTagName}.
 
@@ -47,7 +48,7 @@ html
             p Torgny Bjers farms servers in the clouds and conjures confluent code from pixie dust and meteorite slag. If besought, he will help you find the castle with the princess.
             ul.actions
               li
-                a(href="#").button Learn More
+                a(href="/").button Learn More
           ul.icons.bulleted
             if social_links.twitter
               li.icon.fa-twitter
@@ -70,6 +71,8 @@ html
       p.copyright
         != partial('../_partials/copyright')
 
+    if disqus.enabled
+      script(src="//#{ disqus.shortname }.disqus.com/count.js" id="dsq-count-scr" async)
     script(src="/assets/js/jquery.min.js")
     script(src="/assets/js/jquery.dropotron.min.js")
     script(src="/assets/js/jquery.scrollex.min.js")

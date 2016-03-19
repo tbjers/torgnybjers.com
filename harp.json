@@ -1,12 +1,11 @@
 {
-  "domains": ["torgnybjers.xorcode.org", "torgnybjers.com"],
+  "domains": ["torgnybjers.xorcode.org", "torgnybjers.com", "codeberserker.com"],
   "globals": {
     "site_title": "Torgny Bjers",
-    "twitter": "torgnybjers",
     "site_url": "http://torgnybjers.com",
     "disqus": {
-      "enabled": false,
-      "shortname": ""
+      "enabled": true,
+      "shortname": "torgny"
     },
     "google_analytics": {
       "enabled": true,

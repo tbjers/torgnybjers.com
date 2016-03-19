@@ -6,9 +6,21 @@ header.major
 
 .content
   != yield
-
   != partial('../_partials/blog-nav')
+  != partial('../_partials/disqus')
 
 .sidebar
   section
     h3 Recent posts
+    - var p = 0
+    - var postList = []
+    - 
+      each post, slug in public.posts._data
+        if post.layout !== false
+          - post.slug = slug
+          - postList.push(post)
+    - postList = postList.reverse().slice(0,5)
+    ul.alt
+      each post in postList
+        li
+          a(href="/posts/#{ post.slug }.html")= post.title

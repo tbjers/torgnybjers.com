@@ -1,0 +1,18 @@
+if disqus.enabled
+  section.comments
+    h2 Discuss
+    #disqus_thread
+    script.
+      var disqus_shortname = '#{ disqus.shortname }';
+      var disqus_config = function () {
+        this.page.identifier = '#{ current.path.join("/") }';
+        this.page.url = '#{ locals.site_url }/#{ current.path.join("/") }.html';
+      };
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.setAttribute('data-timestamp', + new Date());
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    noscript Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    a(class='dsq-brlink', href='http://disqus.com') comments powered by <span class="logo-disqus">Disqus</span>

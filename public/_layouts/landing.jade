@@ -59,6 +59,8 @@ html
         li
           != partial("../_partials/copyright")
 
+    if disqus.enabled
+      script(src="//#{ disqus.shortname }.disqus.com/count.js" id="dsq-count-scr" async)
     script(src="/assets/js/jquery.min.js")
     script(src="/assets/js/jquery.poptrox.min.js")
     script(src="/assets/js/skel.min.js")

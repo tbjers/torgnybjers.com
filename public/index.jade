@@ -22,6 +22,9 @@ for post in postList
           ul.actions
             li
               a(href="/posts/#{ post.slug }.html").button Read More
+            li.icon.fa-comments
+              |  
+              span.disqus-comment-count(data-disqus-identifier="posts/#{ post.slug }")
     else if p < 4
       section
         header
@@ -35,6 +38,9 @@ for post in postList
         ul.actions
           li
             a(href="/posts/#{ post.slug }.html").button.small Read More
+          li.icon.fa-comments
+            |  
+            span.disqus-comment-count(data-disqus-identifier="posts/#{ post.slug }")
 
 section#contact
   h2 Get In Touch
