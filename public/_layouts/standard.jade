@@ -41,6 +41,7 @@ html
             != yield
           - var p = 0
           for post, slug in public.posts._data
+            - post.slug = slug
             if post.layout !== false
               if !post.tags || post.tags.indexOf(current.source) == -1
                 - continue

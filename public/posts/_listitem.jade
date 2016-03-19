@@ -1,5 +1,6 @@
 header.major
-  h4= post.title
+  h4
+    a(href="/posts/#{ post.slug }.html")= post.title
   if post.byline
     p= post.byline
   if post.description

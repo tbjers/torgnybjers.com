@@ -12,7 +12,8 @@ for post in postList
     if p++ == 0
       section#one
         header.major
-          h2= post.title
+          h2
+            a(href="/posts/#{ post.slug }.html")= post.title
           if post.byline
             p= post.byline
               |  
@@ -28,7 +29,8 @@ for post in postList
     else if p < 4
       section
         header
-          h4= post.title
+          h4
+            a(href="/posts/#{ post.slug }.html")= post.title
           if post.byline
             p= post.byline
               |  
