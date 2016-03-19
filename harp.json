@@ -3,6 +3,8 @@
   "globals": {
     "site_title": "Torgny Bjers",
     "site_url": "http://torgnybjers.com",
+    "email": "me@torgnybjers.com",
+    "phone": "704-802-2633",
     "disqus": {
       "enabled": true,
       "shortname": "torgny"
