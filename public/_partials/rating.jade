@@ -12,7 +12,11 @@ mixin stars(score)
 
 h3 Rating
 if rating > 0
-  p= rating
+  ul.alt
+    li Rating
+      div(style="float:right;")
+        span(style="color:orange")
+          mixin stars(rating)
 else
   ul.alt
     each score, name in rating
