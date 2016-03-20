@@ -16,5 +16,8 @@
   },
   "rails": {
     "layout": "../_layouts/standard"
+  },
+  "review": {
+    "layout": "../_layouts/standard"
   }
 }

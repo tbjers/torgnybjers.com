@@ -25,5 +25,18 @@
     "description": "Having used New Relic for other projects I of course jumped on the chance to get started with New Relic for Node.js when my sales contact reached out to me right after the beta ended. I’ve got several projects using Geddy, which is not supported out of the box, so I had to do some customization.",
     "tags": ["node"],
     "layout": "../_layouts/standard"
+  },
+  "review-intel-nuc6i3syh-skylake": {
+    "title": "Review: Mini-PC Intel NUC Kit NUC6i3SYH",
+    "byline": "The Broken Memories of Princess Skylake; or How to match the correct RAM to your new NUC6i3SYH",
+    "date": "March 19, 2016",
+    "description": "A couple of weeks ago my Intel NUC6i3SYH Mac Mini killer arrived. Unfortunately Newegg bundled it with the wrong RAM. Unbeknownst to me, the new Skylake architecture Intel NUCs are very particular when it comes to the types and makes of memory modules. Through some reading as well as trial and error I finally found RAM that worked.",
+    "tags": ["nuc", "review"],
+    "layout": "../_layouts/standard",
+    "rating": {
+      "Ease of installation": 2.5,
+      "Overall experience": 4.5,
+      "Overall value": 5
+    }
   }
 }
