@@ -1,10 +1,16 @@
 header.major
   h1= title
-  p= byline
-    |  
-    != partial('../_partials/blog-tags', { tags: tags })
+  if byline
+    p= byline
+      |  
+      != partial('../_partials/blog-tags', { tags: tags })
+  if date
+    p #{ date } — 
+      span.disqus-comment-count(data-disqus-identifier="#{ current.path.join('/') }")
 
 .content
+  if rating
+    != partial('../_partials/rating', {rating: rating})
   != yield
   != partial('../_partials/blog-nav')
   != partial('../_partials/disqus')
