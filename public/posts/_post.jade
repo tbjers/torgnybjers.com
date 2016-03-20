@@ -10,8 +10,10 @@ header.major
   != partial('../_partials/twitter-button')
 
 .content
+  if medium
+    != partial('../_partials/read-on-medium', { link: medium })
   if rating
-    != partial('../_partials/rating', {rating: rating})
+    != partial('../_partials/rating', { rating: rating })
   != yield
   != partial('../_partials/blog-nav')
   != partial('../_partials/disqus')
