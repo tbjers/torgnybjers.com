@@ -24,6 +24,9 @@
     "sitemap": {
       "enabled": true,
       "changefreq": "weekly"
+    },
+    "rollbar": {
+      "token": "325e389f1b594c9cac4dabeb68d942d9"
     }
   }
 }
