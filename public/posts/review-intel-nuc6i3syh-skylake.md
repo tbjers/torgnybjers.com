@@ -21,7 +21,7 @@ Before I installed any of the RAM modules I updated the BIOS to the latest revis
 
 ## Finding the correct RAM modules
 
-After several days of trial and error I gave up on trying to make the Avexir RAM work and ordered what people said would work: [Kingston HyperX Impact 8GB (2 x 4GB)](http://www.newegg.com/Product/Product.aspx?Item=N82E16820104587). Once ordered, I had to wait. After about four days I grew so impatient with the slow shipping speeds of the combined shenanigans that is UPS MI and USPS that I overnighted a [Crucial 8GB Kit (4GBx2) DDR4](http://www.amazon.com/gp/product/B015HQ9UDO) from Amazon after having checked that there’s at least some kind of [alleged compatibility](http://www.crucial.com/usa/en/compatible-upgrade-for/Intel/nuc6i3syh).
+After several days of trial and error I gave up on trying to make the bundled RAM work and ordered what people said would work: [Kingston HyperX Impact 8GB (2 x 4GB)](http://www.newegg.com/Product/Product.aspx?Item=N82E16820104587). Once ordered, I had to wait. After about four days I grew so impatient with the slow shipping speeds of the combined shenanigans that is UPS MI and USPS that I overnighted a [Crucial 8GB Kit (4GBx2) DDR4](http://www.amazon.com/gp/product/B015HQ9UDO) from Amazon after having checked that there’s at least some kind of [alleged compatibility](http://www.crucial.com/usa/en/compatible-upgrade-for/Intel/nuc6i3syh).
 
 ## Windows 10
 
