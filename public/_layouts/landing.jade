@@ -4,21 +4,21 @@ html
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     <!--[if lte IE 8]>
-    script(src=(environment == 'production' ? cdn : '') + "/assets/js/ie/html5shiv.js")
+    script(src="/assets/js/ie/html5shiv.js")
     <![endif]-->
     title= locals.title ? title + " | " + site_title : site_title
-    link(rel="stylesheet" href="#{ (environment == 'production' ? cdn : '') }/assets/css/landing.css")
+    link(rel="stylesheet" href="/assets/css/landing.css")
     <!--[if lte IE 8]>
-    link(rel="stylesheet" href="#{ (environment == 'production' ? cdn : '') }/assets/css/landing-ie8.css")
+    link(rel="stylesheet" href="/assets/css/landing-ie8.css")
     <![endif]-->
-    link(rel="alternate", type="application/rss+xml", title="#{ site_title } RSS", href="#{ (environment == 'production' ? cdn : '') }/rss.xml")
+    link(rel="alternate", type="application/rss+xml", title="#{ site_title } RSS", href="/rss.xml")
     != partial('../_partials/header')
 
   body#top
 
     header#header
       a.image.avatar(href="/")
-        img(src="#{(environment == 'production' ? cdn : '') }/assets/img/avatar.jpg" alt="")
+        img(src="/assets/img/avatar.jpg" alt="")
       h1
         strong Torgny Bjers
         |  farms servers in the clouds
@@ -67,9 +67,9 @@ html
 
     if disqus.enabled
       script(src="//#{ disqus.shortname }.disqus.com/count.js" id="dsq-count-scr" async)
-    script(src=(environment == 'production' ? cdn : '') + "/assets/js/jquery.min.js")
-    script(src=(environment == 'production' ? cdn : '') + "/assets/js/jquery.poptrox.min.js")
-    script(src=(environment == 'production' ? cdn : '') + "/assets/js/skel.min.js")
-    script(src=(environment == 'production' ? cdn : '') + "/assets/js/landing-util.js")
-    script(src=(environment == 'production' ? cdn : '') + "/assets/js/landing-main.js")
+    script(src="/assets/js/jquery.min.js")
+    script(src="/assets/js/jquery.poptrox.min.js")
+    script(src="/assets/js/skel.min.js")
+    script(src="/assets/js/landing-util.js")
+    script(src="/assets/js/landing-main.js")
     != partial('../_partials/footer')

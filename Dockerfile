@@ -3,8 +3,8 @@ FROM xorcode/harp-nginx
 WORKDIR /srv/www
 
 ADD . /srv/www/
-RUN harp compile
+RUN npm install && gulp cdn
 
 EXPOSE 80
 
-CMD nginx
+CMD ["nginx"]
