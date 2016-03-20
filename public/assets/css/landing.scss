@@ -700,6 +700,31 @@ ul {
       }
     }
   }
+
+  &.tags {
+    list-style: none;
+    padding-left: 0;
+    li {
+      display: inline-block;
+      margin: 0 (_size(element-margin) * 0.25) 0 0;
+      padding: 0 (_size(element-margin) * 0.20);
+      vertical-align: middle;
+
+      background-color: _palette(border);
+      color: _palette(fg);
+      border-radius: _size(border-radius);
+      font-size: 0.8em;
+
+      &.special {
+        background-color: _palette(accent1, bg);
+        color: _palette(bg);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 dl {

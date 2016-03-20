@@ -8,6 +8,9 @@
   "thanks": {
     "layout": "_layouts/landing"
   },
+  "about": {
+    "layout": "_layouts/landing"
+  },
   "rss": {
     "layout": false
   },
