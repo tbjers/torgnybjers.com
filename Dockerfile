@@ -3,7 +3,7 @@ FROM xorcode/gulp-harp-nginx
 WORKDIR /srv/www
 
 ADD . /srv/www/
-RUN gulp cdn
+RUN npm install gulp && gulp cdn
 
 EXPOSE 80
 
