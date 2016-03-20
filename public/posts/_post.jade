@@ -7,6 +7,7 @@ header.major
   if date
     p #{ date } — 
       span.disqus-comment-count(data-disqus-identifier="#{ current.path.join('/') }")
+  != partial('../_partials/twitter-button')
 
 .content
   if rating
