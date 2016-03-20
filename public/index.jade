@@ -23,9 +23,11 @@ for post in postList
           ul.actions
             li
               a(href="/posts/#{ post.slug }.html").button Read More
-            li.icon.fa-comments
-              |  
-              span.disqus-comment-count(data-disqus-identifier="posts/#{ post.slug }")
+            != partial('_partials/read-on-medium', { medium: post.medium })
+            if disqus.enabled
+              li.icon.fa-comments
+                |  
+                span.disqus-comment-count(data-disqus-identifier="posts/#{ post.slug }")
     else if p < 4
       section
         header
