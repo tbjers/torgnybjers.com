@@ -4,17 +4,17 @@ html
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     <!--[if lte IE 8]>
-    script(src="/assets/js/ie/html5shiv.js")
+    script(src=(environment == 'production' ? cdn : '') + "/assets/js/ie/html5shiv.js")
     <![endif]-->
     title= locals.title ? title + " | " + site_title : site_title
-    link(rel="stylesheet" href="/assets/css/main.css")
+    link(rel="stylesheet" href="#{ (environment == 'production' ? cdn : '') }/assets/css/main.css")
     <!--[if lte IE 8]>
-    link(rel="stylesheet" href="/assets/css/ie8.css")
+    link(rel="stylesheet" href="#{ (environment == 'production' ? cdn : '') }/assets/css/ie8.css")
     <![endif]-->
     <!--[if lte IE 9]>
-    link(rel="stylesheet" href="/assets/css/ie9.css")
+    link(rel="stylesheet" href="#{ (environment == 'production' ? cdn : '') }/assets/css/ie9.css")
     <![endif]-->
-    link(rel="alternate", type="application/rss+xml", title="#{ site_title } RSS", href="/rss.xml")
+    link(rel="alternate", type="application/rss+xml", title="#{ site_title } RSS", href="#{ (environment == 'production' ? cdn : '') }/rss.xml")
     != partial('../_partials/header')
 
   body
@@ -83,11 +83,11 @@ html
 
     if disqus.enabled
       script(src="//#{ disqus.shortname }.disqus.com/count.js" id="dsq-count-scr" async)
-    script(src="/assets/js/jquery.min.js")
-    script(src="/assets/js/jquery.dropotron.min.js")
-    script(src="/assets/js/jquery.scrollex.min.js")
-    script(src="/assets/js/skel.min.js")
-    script(src="/assets/js/util.js")
-    script(src="/assets/js/prism.min.js")
-    script(src="/assets/js/main.js")
+    script(src=(environment == 'production' ? cdn : '') + "/assets/js/jquery.min.js")
+    script(src=(environment == 'production' ? cdn : '') + "/assets/js/jquery.dropotron.min.js")
+    script(src=(environment == 'production' ? cdn : '') + "/assets/js/jquery.scrollex.min.js")
+    script(src=(environment == 'production' ? cdn : '') + "/assets/js/skel.min.js")
+    script(src=(environment == 'production' ? cdn : '') + "/assets/js/util.js")
+    script(src=(environment == 'production' ? cdn : '') + "/assets/js/prism.min.js")
+    script(src=(environment == 'production' ? cdn : '') + "/assets/js/main.js")
     != partial('../_partials/footer')

@@ -27,6 +27,7 @@
     },
     "rollbar": {
       "token": "325e389f1b594c9cac4dabeb68d942d9"
-    }
+    },
+    "cdn": "//d1vdil4xvplvfb.cloudfront.net"
   }
 }
