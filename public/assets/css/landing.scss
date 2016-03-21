@@ -245,7 +245,7 @@ header {
 form {
   margin: 0 0 _size(element-margin) 0;
   .actions {
-    margin-top: 1em;
+    margin-top: (_size(element-margin) * 0.5);
   }
 }
 
@@ -1293,6 +1293,10 @@ body.is-touch {
   ul {
     &.actions {
       margin: 0 0 _size(element-margin) 0;
+
+      form & {
+        margin-top: (_size(element-margin) * 0.5);
+      }
 
       li {
         display: block;
