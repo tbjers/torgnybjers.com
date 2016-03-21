@@ -62,3 +62,10 @@
     }
   }
 }
+
+@include breakpoint(small) {
+  #main .inner .content img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
