@@ -1,7 +1,9 @@
 var harp = require('harp');
+var path = require('path');
 var gulp = require('gulp');
 var shell = require('gulp-shell');
 var cdnizer = require('gulp-cdnizer');
+var RevAll = require('gulp-rev-all');
 var harpJson = require('./harp.json');
 
 gulp.task('compile', function () {
@@ -12,16 +14,20 @@ gulp.task('compile', function () {
 });
 
 gulp.task('cdn', ['compile'], function () {
-  return gulp.src('./www/**/*.html')
-    .pipe(cdnizer({
-      defaultCDNBase: harpJson.globals.cdn,
-      files: [
-        '/assets/js/**/*.js',
-        '/assets/css/**/*.css',
-        '/assets/**/*.{png,jpg,gif}',
-        '/rss.xml'
-      ]
-    }))
+  var revAll = new RevAll({
+    prefix: harpJson.globals.cdn,
+    transformFilename: function (file, hash) {
+      var ext = path.extname(file.path), filename = path.basename(file.path, ext);
+      if (ext == '.html') {
+        filename = filename + ext;
+      } else {
+        filename = filename + '.' + hash.substr(0, 8) + ext;
+      }
+      return filename;
+    }
+  });
+  gulp.src('./www/**')
+    .pipe(revAll.revision())
     .pipe(gulp.dest('./www/'));
 });
 
