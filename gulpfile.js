@@ -18,7 +18,7 @@ gulp.task('cdn', ['compile'], function () {
     prefix: harpJson.globals.cdn,
     transformFilename: function (file, hash) {
       var ext = path.extname(file.path), filename = path.basename(file.path, ext);
-      if (ext == '.html') {
+      if (ext == '.html' || file.path.indexOf('fonts') !== -1) {
         filename = filename + ext;
       } else {
         filename = filename + '.' + hash.substr(0, 8) + ext;
