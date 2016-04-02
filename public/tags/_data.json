@@ -19,5 +19,8 @@
   },
   "review": {
     "layout": "../_layouts/standard"
+  },
+  "howto": {
+    "layout": "../_layouts/standard"
   }
 }
