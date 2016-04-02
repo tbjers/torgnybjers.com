@@ -42,8 +42,10 @@ for post in postList
         ul.actions
           li
             a(href="/posts/#{ post.slug }.html").button.small Read More
-          li.icon.fa-comments
-            |  
-            span.disqus-comment-count(data-disqus-identifier="posts/#{ post.slug }")
+          != partial('_partials/read-on-medium', { medium: post.medium, buttonClass: 'small' })
+          if disqus.enabled
+            li.icon.fa-comments
+              |  
+              span.disqus-comment-count(data-disqus-identifier="posts/#{ post.slug }")
 
 != partial('_partials/contact-form-landing')
