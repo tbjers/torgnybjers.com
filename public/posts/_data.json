@@ -43,7 +43,7 @@
   "intel-nuc6i3syh-media-server-with-fedora-plex-flexget-deluge": {
     "title": "How-To: Intel NUC6i3SYH Media Server",
     "byline": "Building a Media Server with FlexGet, Deluge, Plex and Fedora 24",
-    "date": "March 31, 2016",
+    "date": "April 1, 2016",
     "description": "A couple of weeks ago my Intel NUC6i3SYH Mac Mini killer arrived. Unfortunately Newegg bundled it with the wrong RAM. Unbeknownst to me, the new Skylake architecture Intel NUCs are very particular when it comes to the types and makes of memory modules. Through some reading as well as trial and error I finally found RAM that worked.",
     "tags": ["nuc", "howto"],
     "layout": "../_layouts/standard",
