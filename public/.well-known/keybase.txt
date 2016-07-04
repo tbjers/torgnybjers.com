@@ -1,0 +1,48 @@
+I hereby claim:
+
+  * I am an admin of http://torgnybjers.com
+  * I am tbjers (https://keybase.io/tbjers) on keybase.
+  * I have a public key ASBzgQf5v8xWP89F3oR_CRPJp6kjDiODCPyUA09Cg00pdAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010124e8ab8b43c02109013725a582d369d85fbe347e32e64e0b23d378b319b028620a",
+            "host": "keybase.io",
+            "kid": "0120738107f9bfcc563fcf45de847f0913c9a7a9230e238308fc94034f42834d29740a",
+            "uid": "b1df7b6acb6fa0c8e85f340fc90cc619",
+            "username": "tbjers"
+        },
+        "service": {
+            "hostname": "torgnybjers.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.16"
+    },
+    "ctime": 1467616308,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1467616222,
+        "hash": "57c764b597d3fe77c52fcf47a7e471ab1473e845f7dd9c6ccfe755a252f2e47ddbb49020c75a6dcf610810b62e711002806fccdbaa094bcd507e6d12c8ef3180",
+        "seqno": 507976
+    },
+    "prev": "d01c8abb534c6812966ca9ba737df14f9595e1dfb07b1af13b42d019646b269a",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgc4EH+b/MVj/PRd6EfwkTyaepIw4jgwj8lANPQoNNKXQKp3BheWxvYWTFAvR7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxMjRlOGFiOGI0M2MwMjEwOTAxMzcyNWE1ODJkMzY5ZDg1ZmJlMzQ3ZTMyZTY0ZTBiMjNkMzc4YjMxOWIwMjg2MjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNzM4MTA3ZjliZmNjNTYzZmNmNDVkZTg0N2YwOTEzYzlhN2E5MjMwZTIzODMwOGZjOTQwMzRmNDI4MzRkMjk3NDBhIiwidWlkIjoiYjFkZjdiNmFjYjZmYTBjOGU4NWYzNDBmYzkwY2M2MTkiLCJ1c2VybmFtZSI6InRiamVycyJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoidG9yZ255YmplcnMuY29tIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xNiJ9LCJjdGltZSI6MTQ2NzYxNjMwOCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDY3NjE2MjIyLCJoYXNoIjoiNTdjNzY0YjU5N2QzZmU3N2M1MmZjZjQ3YTdlNDcxYWIxNDczZTg0NWY3ZGQ5YzZjY2ZlNzU1YTI1MmYyZTQ3ZGRiYjQ5MDIwYzc1YTZkY2Y2MTA4MTBiNjJlNzExMDAyODA2ZmNjZGJhYTA5NGJjZDUwN2U2ZDEyYzhlZjMxODAiLCJzZXFubyI6NTA3OTc2fSwicHJldiI6ImQwMWM4YWJiNTM0YzY4MTI5NjZjYTliYTczN2RmMTRmOTU5NWUxZGZiMDdiMWFmMTNiNDJkMDE5NjQ2YjI2OWEiLCJzZXFubyI6OSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEC35rPsi3v674450xAGBJxSYiXIYKgFs/8IX1GxV/LJVuw3tMZmu8RXLWRrXxP8EtsMUZU4FzCXxtSUG3sV57kKqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgOeG2nB3Ffa1Eaz5A+k8lZZTSR+12b0sAVgs4BlEyf7mjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tbjers
