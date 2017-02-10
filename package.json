@@ -6,12 +6,15 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Torgny Bjers <torgny@xorcode.com>",
   "license": "ISC",
   "dependencies": {
-    "harp": "^0.20.1"
+    "harp": "^0.20.1",
+    "snyk": "^1.25.0"
   },
   "engines": {
     "node": "0.10.x",
@@ -22,5 +25,6 @@
     "gulp-cdnizer": "^1.1.6",
     "gulp-rev-all": "^0.8.24",
     "gulp-shell": "^0.5.2"
-  }
+  },
+  "snyk": true
 }
