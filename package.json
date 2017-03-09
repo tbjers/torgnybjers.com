@@ -11,7 +11,7 @@
   "author": "Torgny Bjers <torgny@xorcode.com>",
   "license": "ISC",
   "dependencies": {
-    "harp": "^0.20.1"
+    "harp": "^0.21.0"
   },
   "engines": {
     "node": "0.10.x",
