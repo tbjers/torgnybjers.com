@@ -6,12 +6,13 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "prestart": "gulp cdn",
+    "start": "harp server"
   },
   "author": "Torgny Bjers <torgny@xorcode.com>",
   "license": "ISC",
   "dependencies": {
-    "harp": "^0.20.1"
+    "harp": "^0.23.0"
   },
   "engines": {
     "node": "0.10.x",
