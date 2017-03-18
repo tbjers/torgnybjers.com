@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Torgny Bjers website",
   "repository": "https://github.com/tbjers/torgnybjers.com",
-  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "gulp cdn",
