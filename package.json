@@ -5,7 +5,7 @@
   "repository": "https://github.com/tbjers/torgnybjers.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "gulp cdn",
+    "postinstall": "harp build && gulp cdn",
     "start": "harp server"
   },
   "author": "Torgny Bjers <torgny@xorcode.com>",
