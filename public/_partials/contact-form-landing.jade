@@ -5,7 +5,7 @@ section#contact
     | Send me a message and I'll get back to you!
   .row
     div(class="8u 12u$(small)")
-      form(method="post" action="http://formspree.io/#{ locals.email }")
+      form(method="post" action="https://formspree.io/#{ locals.email }")
         input(type="hidden" name="_next" value="#{ locals.site_url }/thanks.html")
         input(type="hidden" name="_subject" value="Contact Form: torgnybjers.com")
         input(type="text" name="_gotcha" style="display:none")
