@@ -6,19 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "harp build && gulp cdn",
-    "start": "harp server"
+    "start": "harp server",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Torgny Bjers <torgny@xorcode.com>",
   "license": "ISC",
   "dependencies": {
     "harp": "^0.23.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-cdnizer": "^1.1.6",
     "gulp-rev-all": "^0.8.24",
-    "gulp-shell": "^0.5.2"
+    "gulp-shell": "^0.5.2",
+    "snyk": "^1.105.0"
   },
   "engines": {
     "node": "6.9.x",
     "npm": "3.10.x"
-  }
+  },
+  "snyk": true
 }
