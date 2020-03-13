@@ -12,9 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "harp": "^0.23.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-cdnizer": "^1.1.6",
-    "gulp-rev-all": "^0.8.24",
+    "gulp-rev-all": "^0.9.8",
     "gulp-shell": "^0.5.2"
   },
   "engines": {
