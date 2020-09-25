@@ -13,7 +13,7 @@
   "author": "Torgny Bjers <torgny@xorcode.com>",
   "license": "ISC",
   "dependencies": {
-    "harp": "^0.28.0",
+    "harp": "^0.30.0",
     "gulp": "^3.9.1",
     "gulp-cdnizer": "^2.0.1",
     "gulp-rev-all": "^0.8.24",
