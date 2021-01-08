@@ -20,7 +20,7 @@ checkPaths = ["/"]
 [[headers]]
 for = "/*"
 [headers.values]
-Content-Security-Policy = "default-src 'self'; base-uri 'self';"
+Content-Security-Policy = "default-src 'self'; base-uri 'self'; script-src 'sha256-qVFRiHzAJmGK7ktbzjKX5k9FFpqLRIpBVTC15Q4ktJ8='"
 X-Content-Security-Policy = "default-src 'self'; base-uri 'self';"
 X-WebKit-CSP = "default-src 'self'; base-uri 'self';"
 X-Frame-Options = "DENY"
