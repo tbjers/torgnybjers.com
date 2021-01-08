@@ -1,0 +1,19 @@
+[build]
+command = "jekyll build"
+environment = "REVIEW_ID"
+
+[[plugins]]
+package = "netlify-plugin-checklinks"
+[plugins.inputs]
+entryPoints = ["*.html"]
+recursive = true
+pretty = true
+skipPatterns = ["https://gist.github.com/"]
+todoPatterns = []
+checkExternal = false
+followSourceMaps = false
+
+[[plugins]]
+package = "netlify-plugin-a11y"
+[plugins.inputs]
+checkPaths = ["/"]
