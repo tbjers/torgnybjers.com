@@ -16,13 +16,26 @@
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   {% endif %}
 
-  <link rel="stylesheet" href="{{ '/public/fonts/iosevka-etoile.css' | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/public/fonts/iosevka-sparkle.css' | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/public/fonts/iosevka.css' | absolute_url }}">
+  <link rel="preload" href="{{ '/public/css/fonts/iosevka-etoile-regular.woff2' | absolute_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/public/css/fonts/iosevka-extended.woff2' | absolute_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/public/css/fonts/iosevka-sparkle-bold.woff2' | absolute_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/public/css/fonts/iosevka-sparkle-bolditalic.woff2' | absolute_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/public/css/fonts/iosevka-sparkle-italic.woff2' | absolute_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/public/css/fonts/iosevka-sparkle-regular.woff2' | absolute_url }}" as="font" type="font/woff2" crossorigin>
+
+  <link rel="preload" href="{{ '/public/css/fonts/iosevka-etoile-regular.ttf' | absolute_url }}" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="{{ '/public/css/fonts/iosevka-extended.ttf' | absolute_url }}" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="{{ '/public/css/fonts/iosevka-sparkle-bold.ttf' | absolute_url }}" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="{{ '/public/css/fonts/iosevka-sparkle-bolditalic.ttf' | absolute_url }}" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="{{ '/public/css/fonts/iosevka-sparkle-italic.ttf' | absolute_url }}" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="{{ '/public/css/fonts/iosevka-sparkle-regular.ttf' | absolute_url }}" as="font" type="font/ttf" crossorigin>
+
+  <link rel="preload" href="{{ '/public/css/iosevka.css' | absolute_url }}" as="style" crossorigin>
+
+  <link rel="stylesheet" href="{{ '/public/css/iosevka.css' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/public/css/poole.css' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/public/css/syntax.css' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/public/css/lanyon.css' | absolute_url }}">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/public/apple-touch-icon-precomposed.png' | absolute_url }}">
   <link rel="shortcut icon" href="{{ '/public/favicon.ico' | absolute_url }}">
