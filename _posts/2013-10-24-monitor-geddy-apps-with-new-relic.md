@@ -7,7 +7,7 @@ tags:
   - node
 ---
 
-Having used [New Relic](https://newrelic.com/) for other projects I of course jumped on the chance to get started with [New Relic for Node.js](https://newrelic.com/nodejs) when our sales contact reached out to us right after their beta ended. I've got several projects using [Geddy](https://geddyjs.org/), which is not supported out of the box, so I had to do some customization.
+Having used [New Relic](https://newrelic.com/) for other projects I of course _jumped_ on the chance to get started with [New Relic for Node.js](https://newrelic.com/nodejs) when our sales contact reached out to us right after their beta ended. I've got several projects using [Geddy](https://geddyjs.org/), which is not supported out of the box, so I had to do some customization.
 
 > Pinpoint and solve your Node.js application performance issues! New Relic is
 > the only tool you'll need to see everything in your data intensive,
@@ -51,6 +51,7 @@ Create a new file in your project root called `app.js` and add the following to 
 ```javascript
 var geddy = require("geddy");
 
+// Start a new cluster
 geddy.startCluster({
   hostname: "0.0.0.0",
   port: process.env.PORT || "4000",
