@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d0713378-0189-4ac7-8884-e6292ba69a24/deploy-status)](https://app.netlify.com/sites/stoic-neumann-fc97d1/deploys)
 
-Based on Lanyon which is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+Based on Lanyon which is an unassuming [Jekyll](https://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](https://getpoole.com), the Jekyll butler.
 
 ![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png)
 ![Lanyon with open sidebar](https://f.cloud.github.com/assets/98681/1825267/be04a914-71b0-11e3-966f-8afe9894c729.png)
@@ -28,7 +28,7 @@ Lanyon includes some customizable options, typically applied via classes on the 
 
 ### Sidebar menu
 
-Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
+Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](https://jekyllrb.com/docs/frontmatter/).
 
 ```
 ---
