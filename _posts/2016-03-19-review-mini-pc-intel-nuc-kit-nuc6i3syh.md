@@ -12,7 +12,7 @@ A couple of weeks ago my [Intel NUC6i3SYH](https://www.intel.com/content/www/us/
 
 **6th generation Intel NUC kits are still to be considered bleeding edge. Unless you follow the guide in this review to the point on hardware purchases you may not end up with a working system. You’ll need Windows 10 or a very recent Linux distribution to fully appreciate the wonders of this NUC.**
 
-![](/public/img/posts/2016/03/NUC6i3SYH.png "Intel NUC6i3SYH")
+![A picture of an Intel NUC6i3SYH, a small form-factor computer](/public/img/posts/2016/03/NUC6i3SYH.png "Intel NUC6i3SYH")
 
 > Intel® NUC Kit NUC6i3SYH is equipped with Intel’s newest architecture, the 6th generation Intel® Core™ i3-6100U processor. With 7.1 surround sound and a full-sized HDMI port for brilliant 4K resolution, NUC6i3SYH can power home entertainment and light gaming. NUC6i3SYH has room for a 2.5” drive so you can store all your media and an M.2 SSD so you can transfer your data at lightning speed. Designed for Windows® 10, NUC6i3SYH has the performance to stream media, manage spreadsheets, or create presentations.
 
