@@ -6,7 +6,8 @@ byline: Using New Relic's Node.js agent to monitor Geddy applications
 tags:
   - node
 ---
-Having used [New Relic](https://newrelic.com/) for other projects I of course jumped on the chance to get started with [New Relic for Node.js](https://newrelic.com/nodejs) when our sales contact reached out to us right after their beta ended. I've got several projects using [Geddy](http://geddyjs.org/), which is not supported out of the box, so I had to do some customization.
+
+Having used [New Relic](https://newrelic.com/) for other projects I of course jumped on the chance to get started with [New Relic for Node.js](https://newrelic.com/nodejs) when our sales contact reached out to us right after their beta ended. I've got several projects using [Geddy](https://geddyjs.org/), which is not supported out of the box, so I had to do some customization.
 
 > Pinpoint and solve your Node.js application performance issues! New Relic is
 > the only tool you'll need to see everything in your data intensive,
@@ -48,12 +49,12 @@ $ npm install geddy --save
 Create a new file in your project root called `app.js` and add the following to that file to get New Relic up and running in your Geddy project:
 
 ```javascript
-var geddy = require('geddy');
+var geddy = require("geddy");
 
 geddy.startCluster({
-  hostname: '0.0.0.0'
-, port: process.env.PORT || '4000'
-, environment: process.env.NODE_ENV || 'development'
+  hostname: "0.0.0.0",
+  port: process.env.PORT || "4000",
+  environment: process.env.NODE_ENV || "development",
 });
 ```
 
@@ -62,11 +63,11 @@ geddy.startCluster({
 Load New Relic in your `config/init.js` script.
 
 ```javascript
-var cluster = require('cluster');
+var cluster = require("cluster");
 
-if (cluster.isWorker && process.env.NODE_ENV == 'production') {
-  process.env.NEW_RELIC_LOG = 'stdout';
-  geddy.newrelic = require('newrelic');
+if (cluster.isWorker && process.env.NODE_ENV == "production") {
+  process.env.NEW_RELIC_LOG = "stdout";
+  geddy.newrelic = require("newrelic");
 }
 ```
 
@@ -116,7 +117,7 @@ Running our application with Node is simple:
 $ node app
 ```
 
-Navigate to [http://localhost:4000/](http://localhost:4000/) and then [http://localhost:4000/users](http://localhost:4000/users) where you can start adding, editing, and removing users to get some sample data in your New Relic account.
+Navigate to [https://localhost:4000/](https://localhost:4000/) and then [https://localhost:4000/users](https://localhost:4000/users) where you can start adding, editing, and removing users to get some sample data in your New Relic account.
 
 Once you start your application you will begin to see data in New Relic within five minutes and your brand new Node.js application will be accessible from your New Relic dashboard.
 
@@ -128,7 +129,7 @@ You can take a look at our example repository if you want to make sure you didn'
 
 ## Documentation
 
-For more information, please see the [Geddy documentation](http://geddyjs.org/reference#controllers.params) on controllers as well as the [New Relic Node.js project](https://github.com/newrelic/node-newrelic/#transactions-and-request-naming).
+For more information, please see the [Geddy documentation](https://geddyjs.org/reference#controllers.params) on controllers as well as the [New Relic Node.js project](https://github.com/newrelic/node-newrelic/#transactions-and-request-naming).
 
 ## Thank yous
 

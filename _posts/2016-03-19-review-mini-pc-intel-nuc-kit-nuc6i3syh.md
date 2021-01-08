@@ -1,13 +1,14 @@
 ---
 layout: post
-title: 'Review: Mini-PC Intel NUC Kit NUC6i3SYH'
+title: "Review: Mini-PC Intel NUC Kit NUC6i3SYH"
 date: 2016-03-19 01:20 -0500
 byline: The Broken Memories of Princess Skylake; or How to match the correct RAM to your new NUC6i3SYH
 tags:
   - review
   - nuc
 ---
-A couple of weeks ago my [Intel NUC6i3SYH](http://www.intel.com/content/www/us/en/nuc/nuc-kit-nuc6i3syh.html) Mac Mini killer arrived. Unfortunately Newegg bundled it with the wrong RAM. Unbeknownst to me, the new Skylake architecture Intel NUCs are very particular when it comes to the types and makes of memory modules. Through some reading as well as trial and error I finally found RAM that worked.
+
+A couple of weeks ago my [Intel NUC6i3SYH](https://www.intel.com/content/www/us/en/nuc/nuc-kit-nuc6i3syh.html) Mac Mini killer arrived. Unfortunately Newegg bundled it with the wrong RAM. Unbeknownst to me, the new Skylake architecture Intel NUCs are very particular when it comes to the types and makes of memory modules. Through some reading as well as trial and error I finally found RAM that worked.
 
 **6th generation Intel NUC kits are still to be considered bleeding edge. Unless you follow the guide in this review to the point on hardware purchases you may not end up with a working system. You’ll need Windows 10 or a very recent Linux distribution to fully appreciate the wonders of this NUC.**
 
@@ -17,10 +18,10 @@ A couple of weeks ago my [Intel NUC6i3SYH](http://www.intel.com/content/www/us/e
 
 ### Hardware used for review
 
-- [Intel NUC6i3SYH Kit](http://www.newegg.com/Product/Product.aspx?Item=N82E16856102146)
-- [Samsung Spinpoint MT9 2TB 5400 RPM](http://www.newegg.com/Product/Product.aspx?Item=N82E16822178627)
-- [Crucial 8GB Kit (4GBx2) DDR4](http://www.amazon.com/gp/product/B015HQ9UDO)
-- [Kingston HyperX Impact 8GB (2 x 4GB)](http://www.newegg.com/Product/Product.aspx?Item=N82E16820104587)
+- [Intel NUC6i3SYH Kit](https://www.newegg.com/Product/Product.aspx?Item=N82E16856102146)
+- [Samsung Spinpoint MT9 2TB 5400 RPM](https://www.newegg.com/Product/Product.aspx?Item=N82E16822178627)
+- [Crucial 8GB Kit (4GBx2) DDR4](https://www.amazon.com/gp/product/B015HQ9UDO)
+- [Kingston HyperX Impact 8GB (2 x 4GB)](https://www.newegg.com/Product/Product.aspx?Item=N82E16820104587)
 
 ## Update the NUC’s BIOS
 
@@ -28,11 +29,11 @@ Before I installed any of the RAM modules I updated the BIOS to the latest revis
 
 ## Finding the correct RAM modules
 
-After several days of trial and error I gave up on trying to make the bundled RAM work and ordered what people said would work: [Kingston HyperX Impact 8GB (2 x 4GB)](http://www.newegg.com/Product/Product.aspx?Item=N82E16820104587). Once ordered, I had to wait. After about four days I grew so impatient with the slow shipping speeds of the combined shenanigans that is UPS MI and USPS that I overnighted a [Crucial 8GB Kit (4GBx2) DDR4](http://www.amazon.com/gp/product/B015HQ9UDO) from Amazon after having checked that there’s at least some kind of [alleged compatibility](http://www.crucial.com/usa/en/compatible-upgrade-for/Intel/nuc6i3syh).
+After several days of trial and error I gave up on trying to make the bundled RAM work and ordered what people said would work: [Kingston HyperX Impact 8GB (2 x 4GB)](https://www.newegg.com/Product/Product.aspx?Item=N82E16820104587). Once ordered, I had to wait. After about four days I grew so impatient with the slow shipping speeds of the combined shenanigans that is UPS MI and USPS that I overnighted a [Crucial 8GB Kit (4GBx2) DDR4](https://www.amazon.com/gp/product/B015HQ9UDO) from Amazon after having checked that there’s at least some kind of [alleged compatibility](https://www.crucial.com/usa/en/compatible-upgrade-for/Intel/nuc6i3syh).
 
 ## Windows 10
 
-When the Crucial sticks arrived I immediately installed them in the NUC and attempted to install Windows 10 x86\_64. Installation went without a hitch and I was up and running with Windows 10 in short order.
+When the Crucial sticks arrived I immediately installed them in the NUC and attempted to install Windows 10 x86_64. Installation went without a hitch and I was up and running with Windows 10 in short order.
 
 Phew. What a relief to finally have found some RAM that worked, and on top of that, it was RAM that apparently none of the other users had tested. Not only did I have a working Apple Mini killer, I had provided a service to the community by testing RAM nobody else had tried so far.
 
@@ -64,8 +65,8 @@ I felt I had to travel to the future to solve my problem. I brought back Fedora 
 
 Warnings issued, gear donned; let’s step into the future. Finding and downloading Fedora Rawhide images can be an adventure in itself. I’ve made things easier by linking to the correct FTP directories for you:
 
-- [Fedora Rawhide Server](http://dl.fedoraproject.org/pub/fedora/linux/development/rawhide/Server/x86_64/iso/)
-- [Fedora Rawhide Workstation](http://dl.fedoraproject.org/pub/fedora/linux/development/rawhide/Workstation/x86_64/iso/)
+- [Fedora Rawhide Server](https://dl.fedoraproject.org/pub/fedora/linux/development/rawhide/Server/x86_64/iso/)
+- [Fedora Rawhide Workstation](https://dl.fedoraproject.org/pub/fedora/linux/development/rawhide/Workstation/x86_64/iso/)
 
 Once you have created a bootable USB, you may have to run the installer in text-only mode because the graphical installer failed to start in my case. It may be fixed by the time you read this article, so who knows.
 
@@ -85,9 +86,9 @@ The rest of you: **Get one, you won’t regret it!**
 
 If you want a cheap system with enough space and RAM to get you going in most cases, here’s your guaranteed to work shopping list:
 
-- [Intel NUC6i3SYH Kit](http://www.newegg.com/Product/Product.aspx?Item=N82E16856102146)
-- [Samsung Spinpoint MT9 2TB 5400 RPM](http://www.newegg.com/Product/Product.aspx?Item=N82E16822178627)
-- [Kingston HyperX Impact 8GB (2 x 4GB)](http://www.newegg.com/Product/Product.aspx?Item=N82E16820104587)
+- [Intel NUC6i3SYH Kit](https://www.newegg.com/Product/Product.aspx?Item=N82E16856102146)
+- [Samsung Spinpoint MT9 2TB 5400 RPM](https://www.newegg.com/Product/Product.aspx?Item=N82E16822178627)
+- [Kingston HyperX Impact 8GB (2 x 4GB)](https://www.newegg.com/Product/Product.aspx?Item=N82E16820104587)
 
 For those of you willing to spend a little bit of extra money I do recommend buying an M.2 SSD, though I’d recommend you do plenty of research before doing so because some are apparently not entirely supported by the BIOS. Caveat emptor.
 
