@@ -16,14 +16,14 @@ Oftentimes when we fire up a new AWS instance we use the *t1.micro* type. The de
 
 Use the following simple script to determine your Apache `ServerLimit` and `MaxClients`:
 
-{% gist 4496984/check-apache-instances.sh %}
+{% gist 4496984 check-apache-instances.sh %}
 
 The script will output something similar to this:
 
-{% gist 4496984/shell-output.txt %}
+{% gist 4496984 shell-output.txt %}
 
 You would then modify your Apache configuration accordingly:
 
-{% gist 4496984/httpd.conf %}
+{% gist 4496984 httpd.conf %}
 
 The above configuration excerpt assumes that you are using `mod_prefork` and that you want to keep some free RAM for other processes such as MySQL.

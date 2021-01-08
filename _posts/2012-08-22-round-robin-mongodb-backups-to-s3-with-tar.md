@@ -16,11 +16,11 @@ Have you been looking for an easy way to back something up to the cloud with min
 
 **backup.sh**
 
-{% gist 3430452/backup.sh %}
+{% gist 3430452 backup.sh %}
 
 **tarsplitter.sh**
 
-{% gist 3430452/tarsplitter.sh %}
+{% gist 3430452 tarsplitter.sh %}
 
 Make sure that `s3cmd` or `s3multiput` is in your environment path.
 

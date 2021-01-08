@@ -22,7 +22,7 @@ $ sudo gem install bitly
 
 Once you have installed the gem simply put the below file in your `_plugins` folder.
 
-{% gist 3361948/bitly_filter.rb %}
+{% gist 3361948 bitly_filter.rb %}
 
 Update your configuration file with the following values:
 ```yaml
@@ -33,10 +33,10 @@ bitly:
 
 Then you can use tags like this in your content:
 
-{% gist 3361948/sample_tag %}
+{% gist 3361948 sample_tag %}
 
 Which would produce output similar to this:
 
-{% gist 3361948/sample_output %}
+{% gist 3361948 sample_output %}
 
 The filter uses a cache to cache the shortened URLs during build time to minimize the calls to the [Bit.ly API](http://dev.bitly.com/api.html).

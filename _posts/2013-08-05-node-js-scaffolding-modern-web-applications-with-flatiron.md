@@ -35,15 +35,15 @@ The boilerplate allows you to quickly start scaffolding a web application withou
 
 Our `package.json` file includes several other components used in conjunction with flatiron.
 
-{% gist 6162027/package.json %}
+{% gist 6162027 package.json %}
 
 We decided to use flatiron, plates, resourceful, restful, and union for our example project.
 
-{% gist 6162027/app.js %}
+{% gist 6162027 app.js %}
 
 Our application server gets bootstrapped and launched through the `app.js` file. The application uses Union middleware to integrate plates, resourceful, and restful into flatiron.
 
-{% gist 6162027/config.json %}
+{% gist 6162027 config.json %}
 
 ### Application Configuration
 
@@ -53,25 +53,25 @@ The `restful` and `resourceful` components are configured in the configuration f
 
 We decided to snag the **plates** plugin from the `scaffolding` branch in the `flatiron/flatiron` repository to allow us to easily render views in our application.
 
-{% gist 6162027/plates.js %}
+{% gist 6162027 plates.js %}
 
 The **controllers** plugin serves as a new addition to flatiron and it's based on the plates plugin.
 
-{% gist 6162027/controllers.js %}
+{% gist 6162027 controllers.js %}
 
 The controllers plugin simplifies the inclusion of custom director routes. Each controller file contains all logic necessary for its routes to function.
 
 The default controller serves up the index page.
 
-{% gist 6162027/default.js %}
+{% gist 6162027 default.js %}
 
 Our views use the `plates` module and the `plates` plugin which supports layouts. This example contains a basic layout to get you started.
 
-{% gist 6162027/app.html %}
+{% gist 6162027 app.html %}
 
 The index page automatically includes this layout and its contents replace the `<div id="body"></div>` tag.
 
-{% gist 6162027/index.html %}
+{% gist 6162027 index.html %}
 
 ### Automatically generated REST API resources
 
@@ -80,14 +80,14 @@ By using the `restful` middleware plugin our application automatically discovers
 Our application now reports the following available resources:
 
 ```
-GET     / 
-GET     /api 
-GET     /api/user 
-POST    /api/user 
-POST    /api/user/([._a-zA-Z0-9-]+) 
-GET     /api/user/([._a-zA-Z0-9-]+) 
-DELETE  /api/user/([._a-zA-Z0-9-]+) 
-PUT     /api/user/([._a-zA-Z0-9-]+) 
+GET     /
+GET     /api
+GET     /api/user
+POST    /api/user
+POST    /api/user/([._a-zA-Z0-9-]+)
+GET     /api/user/([._a-zA-Z0-9-]+)
+DELETE  /api/user/([._a-zA-Z0-9-]+)
+PUT     /api/user/([._a-zA-Z0-9-]+)
 ```
 
 Change the `explore` configuration option to `false` in order to not expose available API end-points.
@@ -96,13 +96,13 @@ Change the `explore` configuration option to `false` in order to not expose avai
 
 We also wrote a `user` resource with a couple of helper methods to ease generation of <abbr title="Password-Based Key Derivation Function 2">PBKDF2</abbr> encrypted passwords for heightened security.
 
-{% gist 6162027/user.js %}
+{% gist 6162027 user.js %}
 
 The packer used in the `user` resource resides in the `utils.js` file.
 
 To quickly get started by inserting a user, utilize the snippet from the comment inside the `user.js` file.
 
-{% gist 6162027/utils.js %}
+{% gist 6162027 utils.js %}
 
 With this custom boilerplate we are now ready to start cranking out pages as well as API end-points that can be consumed by our web application and mobile applications alike.
 
