@@ -184,31 +184,33 @@ We can now place our `config.yml` file in the `/etc/flexget` directory by creati
 Paste the following into the configuration file:
 
 {% raw %}
-tasks:
-myshows:
-rss: <your RSS link here>
-thetvdb_lookup: yes
-series:
-settings:
-720p:
-quality: 720p
-set:
-content_filename: "{{series_name}} - {{series_id}}{% if tvdb_ep_name|default(False) %} - {{ tvdb_ep_name }} {% endif %} - {{quality}}"
-movedone: "/home/plex/TV/{{series_name}}/Season {{series_season}}/"
-label: tv
-720p: - Limitless
-deluge:
-path: /home/plex/.incomplete
-ratio: 1.0
-maxupspeed: 150.0
-main_file_only: yes
-hide_sparse_files: yes
-removeatratio: yes
-magnetization_timeout: 120
-schedules: - tasks: 'myshows'
-interval:
-minutes: 15
-api: yes
+  tasks:
+    myshows:
+      rss: <your RSS link here>
+      thetvdb_lookup: yes
+      series:
+        settings:
+          720p:
+            quality: 720p
+            set:
+              content_filename: "{{series_name}} - {{series_id}}{% if tvdb_ep_name|default(False) %} - {{ tvdb_ep_name }} {% endif %} - {{quality}}"
+              movedone: "/home/plex/TV/{{series_name}}/Season {{series_season}}/"
+              label: tv
+        720p:
+          - Limitless
+      deluge:
+        path: /home/plex/.incomplete
+        ratio: 1.0
+        maxupspeed: 150.0
+        main_file_only: yes
+        hide_sparse_files: yes
+        removeatratio: yes
+        magnetization_timeout: 120
+  schedules:
+    - tasks: 'myshows'
+      interval:
+        minutes: 15
+  api: yes
 {% endraw %}
 
 You’ll need to set up your own RSS feed somewhere, I recommend [showrss.info](https://showrss.info/), then replace `<your RSS link here>` with the URL for your personal RSS feed.
