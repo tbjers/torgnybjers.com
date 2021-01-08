@@ -1,0 +1,29 @@
+[build]
+command = "jekyll build"
+
+[[plugins]]
+package = "netlify-plugin-checklinks"
+[plugins.inputs]
+entryPoints = ["*.html"]
+recursive = true
+pretty = true
+skipPatterns = ["https://gist.github.com/"]
+todoPatterns = []
+checkExternal = false
+followSourceMaps = false
+
+[[plugins]]
+package = "netlify-plugin-a11y"
+[plugins.inputs]
+checkPaths = ["/"]
+
+[[headers]]
+for = "/*"
+[headers.values]
+Content-Security-Policy = "default-src 'self'; base-uri 'self';"
+X-Content-Security-Policy = "default-src 'self'; base-uri 'self';"
+X-WebKit-CSP = "default-src 'self'; base-uri 'self';"
+X-Frame-Options = "DENY"
+X-XSS-Protection = "1; mode=block"
+X-UA-Compatible = "IE=edge"
+X-Content-Type-Options = "nosniff"
