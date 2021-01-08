@@ -1,0 +1,33 @@
+# Setup
+title: Torgny Bjers
+tagline: 'Code Berserker'
+description: 'Torgny farms servers in the clouds and conjures confluent code from pixie dust and meteorite slag.'
+url:
+baseurl: ''
+paginate: 1
+permalink: pretty
+
+# About/contact
+author:
+  name: Torgny Bjers
+  url: https://twitter.com/mdo
+  email: torgny@bjers.org
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version: 1.1.0
+google_analytics_id: UA-9637763-1
+
+github:
+  repo: https://github.com/tbjers/torgnybjers.com
+
+exclude:
+  - README.md
+  - LICENSE.md
+  - .editorconfig
+
+include:
+  - .well-known/keybase.txt

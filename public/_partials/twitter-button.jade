@@ -1,9 +1,0 @@
-- var twitterTags = [];
-- if (tags)
-  - for (tag in tags)
-    - if (current.source !== tag)
-      - twitterTags.push(tags[tag])
-
-if locals.social_links.twitter
-  p
-    a.twitter-share-button(href="https://twitter.com/intent/tweet" data-hashtags="#{ twitterTags.join(',') }" data-via="#{ social_links.twitter }")
