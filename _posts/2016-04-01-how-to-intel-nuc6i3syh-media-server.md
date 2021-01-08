@@ -183,7 +183,7 @@ We can now place our `config.yml` file in the `/etc/flexget` directory by creati
 
 Paste the following into the configuration file:
 
-{% raw %}
+{% raw %}```yml
   tasks:
     myshows:
       rss: <your RSS link here>
@@ -211,7 +211,7 @@ Paste the following into the configuration file:
       interval:
         minutes: 15
   api: yes
-{% endraw %}
+```{% endraw %}
 
 You’ll need to set up your own RSS feed somewhere, I recommend [showrss.info](https://showrss.info/), then replace `<your RSS link here>` with the URL for your personal RSS feed.
 
