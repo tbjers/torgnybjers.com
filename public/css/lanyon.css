@@ -227,7 +227,7 @@ a.sidebar-nav-item:focus {
   width: 32px;
   height: 32px;
   content: "";
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23555' xmlns='https://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E")
+  background: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwMDE2MTYiIGZpbGw9IiM1NTUiCiAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjUxMS41QS41LjUwMDEzMTFoMTBhLjUuNTAwMTAxSDNhLjUuNTAwMS0uNS0uNXptMC00QS41LjUwMDEzN2gxMGEuNS41MDAxMDFIM2EuNS41MDAxLS41LS41em0wLTRBLjUuNTAwMTMzaDEwYS41LjUwMDEwMUgzYS41LjUwMDEtLjUtLjV6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIC8+Cjwvc3ZnPgo=")
     no-repeat;
 }
 
@@ -241,7 +241,7 @@ a.sidebar-nav-item:focus {
 .sidebar-toggle:active:before,
 #sidebar-checkbox:focus ~ .sidebar-toggle::before,
 #sidebar-checkbox:checked ~ .sidebar-toggle::before {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='https://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E")
+  background: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwMDE2MTYiIGZpbGw9IiNmZmYiCiAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjUxMS41QS41LjUwMDEzMTFoMTBhLjUuNTAwMTAxSDNhLjUuNTAwMS0uNS0uNXptMC00QS41LjUwMDEzN2gxMGEuNS41MDAxMDFIM2EuNS41MDAxLS41LS41em0wLTRBLjUuNTAwMTMzaDEwYS41LjUwMDEwMUgzYS41LjUwMDEtLjUtLjV6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+Cg==")
     no-repeat;
 }
 
