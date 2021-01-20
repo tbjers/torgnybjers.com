@@ -450,9 +450,13 @@ engine.registerTag('pullquote', {
 const ArticlePreview = createClass({
   render: function () {
     const { entry, widgetFor } = this.props;
-    const rawContent = widgetFor("body").props.value;
-    const liquidContent = engine.parseAndRenderSync(rawContent);
-    const markdownContent = md.render(liquidContent);
+    const bodyWidget = widgetFor("body");
+    let markdownContent = '';
+    if (bodyWidget && bodyWidget.props && bodyWidget.props.value) {
+      const rawContent = widgetFor("body").props.value;
+      const liquidContent = engine.parseAndRenderSync(rawContent);
+      markdownContent = md.render(liquidContent);
+    }
     return html`
       <main class="page-content">
         <div class="wrapper">
